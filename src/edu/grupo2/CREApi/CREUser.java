@@ -2,18 +2,17 @@ package edu.grupo2.CREApi;
 
 public class CREUser {
 
+    private int  ID;
+    private UserData userData;
 
-    private String creName;
-    private Integer creNumberMeter;
-
-    public CREUser(String creName, Integer creNumberMeter) {
-        this.creName = creName;
-        this.creNumberMeter = creNumberMeter;
+    public CREUser(int ID, UserData userData) {
+        this.ID = ID;
+        this.userData = userData;
     }
 
     @Override
     public String toString() {
-        return String.format("CREUser: %s, Url: %s", this.creName, this.creNumberMeter);
+        return ("CRE ID: "+this.ID+" "+this.userData.toString());
     }
 
 }
